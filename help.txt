@@ -1,0 +1,72 @@
+Event Management System
+
+Project Objective - Develop a web application using JAVA for Event registration at University level events with help of JAVA Servlet
+
+TECHSTACKS AND TOOLS USED- JAVA, JDBC, Java Servlet, Oracle DB,
+Java EE version - JAVA EE 8
+Glassfish server 5.0.1
+Apache Netbeans 12
+jdk 1.8 (because glassfish works only for java 8) 
+Not used any frameworks
+
+APPLICATION REQUIREMENTS
+1. Java program to display web contents.
+2. Java program basic knowledge.
+3. Basic concepts of SQL.
+4. HTML & CC for frontend of the website.
+5. For admin give administrative actions like add event, etc
+6. For guest give options to register for event, payment, etc.
+
+ 
+STEPS TO PROCEED
+
+1. Project setup (IDE)
+	1. Install jdk 8 i.e 1.8 and set up environment variables
+	2. Install apache netbeans
+	3. Create new project
+	4. Select glassfish server (do not install glassfish from netbeans, install it separately and browse it in netbeans), GlassFish server is use deploy our servlet.
+	5. Select java ee 8 version
+	6. Select no frameworks
+	7. In libraries select add jar option and add javax.jar file to support sql files. (javax.jar file is to be downloaded separately firsta nd then attached to the project).
+	8. Try to clean and build and then run to see everything is running fine.
+	9. Write the front end code under webpages and backend code under src package.
+	10. Before installing oracle jdbc driver we have to change the port of glassfish server which is 8080 to 2002, i.e, not currently being used port. For this loacte the directory in which glassfish server is installed and look for domain.xml, and search for 8080 and change it to 2002. You might need to remove and add glassfish server again to netbeans.
+
+2. Write the html code under web folder and java servlets code under src folder.
+	1. SERVLET - Servlet is a java technology which is used to create a web application. It is an API that provides many interfaces and classes including documentation. Servlet is a web component that is deployed on the server to create a dynamic web page.
+	2. Diference between a web app and web page is that web app is designed for performing a specific task.
+	3.  Web Application - A web application is an application accessible from the web. A web application is composed of web components like Servlet, JSP, FIlter, etc. and other elements such as HTML, CSS, and JavaScript. The web components typically execute in Web Server and respond to the HTTP request.
+	4. While creating servlet for backend always select the checkbox for creating web.xml as web.xml is connecting jolt between java and html, it contains all servlets.
+	5. Create forms in html to accept input data, with method as 'post', i.e, post method is used to send data to the server. It is safer than get method as data is not added in url. Action in form is where the input data of that specific form is sent, in this case we will be sending data to servlet in backend. 
+
+3. Installing SQL database
+	1. Install oracle database 19c from oracle website, and install it in the system. Set the password as Muskan12345 in windows built in user.
+	2. Open command promt and check if sql is installed correctly by typing sqlplus or you can directly type in sqlplus.
+	3. in username - system and password - Muskan12345
+	4. then type 'connect' and again username and password.
+	5. We will be doing queries from sqlplus only, not using any other database.
+	6. Create a table for participant login details named PLoginDetails in sqlplus using query  Create table PLoginDetails ( username varchar2(100), password varchar2(100), name varchar2(500));
+	7. Create a table for event details named EventDetails in sqlplus using query create table eventdetails(eventname varchar2(100), eventno varchar2(100), coordname varchar2(100), eventdate varchar2(100));
+
+	
+2. Basics of Databases
+3. Java Servlet and JDBC connections
+4. Deployment on server
+
+KEY LEARNINGS
+1. Learnt to deploy a web application on server.
+2. How to intall glassfish server.
+3. How to use java servlet.
+4. Learnt a little abut CGI.
+5. HTML and CSS
+6.
+
+KEY POINTS
+1. The HttpServletRequest object can be used to retrieve incoming HTTP request headers and form data. The HttpServletResponse object can be used to set the HTTP response headers (e.g., content-type) and the response message body.
+ 
+
+CHALLENGES FACED
+1. I got stuck in installing glassfish server into netbeans, download site was not working, after downloading it from somewhere else, netbeans didnt detect it, it took a day to figure out and fix it.
+2. Understanding how things work back at server
+3. Learning html and css for the project
+4. 

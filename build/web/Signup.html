@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Participant Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <center>
+                <h1>Participant Sign Up</h1>
+                <br>
+                <h2>Please fill details below to create new account...</h2>
+                <br>
+                <div class="box">
+                    <center>
+                        <form method="post" action="StoreParticipantDetails">
+                            <h3>Name:</h3>
+                            <input class="text" type="text" name="participant_name" placeholder="name">
+                            <br>
+                            <h3>Username:</h3>
+                            <input type="text" class="text" name="participant_username" placeholder="username">
+                            <br>
+                            <h3>Password:</h3>
+                            <input type="password" class="text" name="participant_password" placeholder="password">
+                            <br>
+                            <h3>Confirm Password:</h3>
+                            <input type="password" class="text" name="participant_confirmPassword" placeholder="password">
+                            <br>
+                            <br>
+                            <br>
+                            <input class="submit" type="submit" value="SUBMIT">
+                        </form>
+                    </center>
+                </div>
+            </center>
+        </div>
+    </body>
+</html>

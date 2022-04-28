@@ -1,0 +1,55 @@
+
+/* 
+    Created on : Apr 19, 2022, 5:56:48 PM
+    Author     : muskan
+*/
+/*css file for whole project*/
+
+body{
+    background-image: url("background.jpg");
+    background-size: 1800px 800px;
+    color: #330033;
+}
+
+.box{
+    border: 3px;
+    border-color: #330033;
+    border-style: solid;
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+}
+
+button{
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+    color: #330033;
+    
+}
+
+a button:hover, .submit:hover{
+    background: #330033;
+    color: #ffccff;
+}
+
+h1,h2,h3{
+    color: #330033;
+}
+
+.text{
+    padding: 5px;
+    background: #ffccff;
+}
+
+.submit{
+    padding: 5px;
+    background: transparent;
+}
+
+th,td{
+    padding: 10px;
+    background: #ffccff;
+}
+
+

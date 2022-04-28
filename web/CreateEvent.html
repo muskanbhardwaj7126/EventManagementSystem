@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Create Event</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <center>
+            <h1>Create an Event</h1>
+            <h2>Please enter following details:</h2>
+            <div class="box">
+                <form method="post" action="CreateEvent">
+                    <h3>Name of the Event:</h3>
+                    <input class="text" type="text" name="eventName" placeholder="Event Name">
+                    <br>
+                    <br>
+                    <h3>Event Number:</h3>
+                    <input class="text" type="text" name="eventNumber" placeholder="Event Number">
+                    <br>
+                    <br>
+                    <h3>Coordinator Name:</h3>
+                    <input class="text" type="text" name="coordName" placeholder="Coordinator Name">
+                    <br>
+                    <br>
+                    <h3>Date of the Event in format(dd-mm-yyyy):</h3>
+                    <input class="text" type="text" name="date" placeholder="Event Date">
+                    <br>
+                    <br>
+                    <br>
+                    <input class="submit" type="submit" value="SUBMIT">
+                </form>
+                <br>
+                <br>
+                <a href="ViewEvent">
+                    <button>View all Events</button>
+                </a>
+                
+                
+            </div>
+        </center>
+    </body>
+</html>
